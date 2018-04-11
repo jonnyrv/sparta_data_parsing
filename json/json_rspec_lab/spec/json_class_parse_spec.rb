@@ -20,7 +20,8 @@ describe 'Testing the exchange rates' do
 
 
   it "should countain 31 rates" do
-    expect(@exchange_rates.get_rates_count).to eq 31
+    expect(@exchange_rates.number_of_rate_values).to eq 31
+    expect(@exchange_rates.number_of_rate_keys).to eq 31
   end
 
   it "should all rates should be Floats" do

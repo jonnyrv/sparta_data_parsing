@@ -29,15 +29,11 @@ class ParseJson
 
 
   def number_of_rate_keys
+    @json_file['rates'].keys.count
   end
 
   def number_of_rate_values
+    @json_file['rates'].values.count
   end
 
 end
-
-run = ParseJson.new('json_exchange_rates.json')
-
-p run.get_base_value
-
-# json = ParseJson.new('json_exchange_rates.json')
